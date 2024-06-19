@@ -1,7 +1,7 @@
 import React from 'react';
-import '/components.css';
+import './style.css';
 
-const tempFutura = ({ data, temperatura }) => {
+const TempFutura = ({ data, temperatura }) => {
   return (
     <div>
       <h3>{data}</h3>
@@ -10,4 +10,4 @@ const tempFutura = ({ data, temperatura }) => {
   );
 };
 
-export default tempFutura;
+export default TempFutura;

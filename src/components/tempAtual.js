@@ -1,13 +1,13 @@
 import React from 'react';
-import '/components.css';
+import './style.css';
 
-const tempAtual = ({ temperature: temperatura, cidade }) => {
+const TempAtual = ({ temperatura, cidade }) => {
   return(
     <div>
-    <h2> Previsão do Tempo para {cidade} </h2>
+      <h2> Previsão do Tempo para {cidade} </h2>
       <p>Temperatura: {temperatura}°C</p>
     </div>
-  )
+  );
 };
 
-export default tempAtual;
+export default TempAtual;

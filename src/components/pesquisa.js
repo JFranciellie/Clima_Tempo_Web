@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '/components.css';
+import './style.css';
 
-const pesquisa = ({ onSearch }) => {
+const Pesquisa = ({ onSearch }) => {
   const [cidade, setCidade] = useState('');
   const [error, setError] = useState('');
 
@@ -13,7 +13,7 @@ const pesquisa = ({ onSearch }) => {
     event.preventDefault();
     if (cidade.trim() !== '') {
       try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=YOUR_API_KEY&units=metric`);
+        const response = await fetch(`2a1fd2fbcbed03002cf67a61605e5ca9https://api.openweathermap.org/data/2.5/weather?q=${cidade}&lang=pt_br&appid=${chave}&units=metric`);
         if (!response.ok) {
           throw new Error('Cidade não encontrada. Por favor, tente novamente.');
         }
@@ -41,4 +41,4 @@ const pesquisa = ({ onSearch }) => {
   );
 };
 
-export default pesquisa;
+export default Pesquisa;
